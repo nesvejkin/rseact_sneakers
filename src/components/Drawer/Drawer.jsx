@@ -1,9 +1,9 @@
 const Drawer = () => {
   return (
-    <div style={{display: 'none'}} className="overlay">
+    <div style={{ display: "none" }} className="overlay">
       <div className="drawer">
         <h2 className="d-flex justify-between mb-30 ">
-          Корзина
+          Моя корзина
           <img
             className="removeBtn"
             src="/img/btn-remove.svg"
