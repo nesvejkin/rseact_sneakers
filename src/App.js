@@ -1,27 +1,23 @@
+import Drawer from "./components/Drawer/Drawer";
+import Header from "./components/Header/Header";
+import ProductCard from "./components/ProductCard/ProductCard";
+
 function App() {
   return (
     <div className="wrapper clear">
-      <header className="d-flex justify-between align-center">
-        <div className="d-flex align-center">
-          <img width={40} height={40} src="/img/logo.png" />
-          <div>
-            <h3>React Sneacers</h3>
-            <p>Магазин лучших кроссовок</p>
+      <Drawer />
+      <Header />
+      <div className="content p-40">
+        <div className="d-flex align-center mb-40 justify-between">
+          <h1>Все кроссовки</h1>
+          <div className="search-block d-flex">
+            <img src="/img/search_icon.svg" alt="Search"></img>
+            <input placeholder="Поиск..." />
           </div>
         </div>
-        <ul className="d-flex">
-          <li className="mr-30">
-            <img width={18} height={18} src="/img/kar.svg" />
-            <span>1205 руб.</span>
-          </li>
-          <li>
-            <img width={18} height={18} src="/img/user.svg" />
-          </li>
-        </ul>
-      </header>
-      <div className="content">
-        <h1>Все кроссовки</h1>
-        ...........
+        <div className="d-flex">
+          <ProductCard />
+        </div>
       </div>
     </div>
   );
