@@ -35,54 +35,27 @@ header {
   }
 }
 
-.card {
-  border: 1px solid #f4f4f4;
-  padding: 20px;
-  width: 220px;
-  border-radius: 20px;
-  margin-right: 30px;
-  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
-
-  &:hover {
-    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.06);
-    transform: translateY(-5px);
-  }
-
-  .favorite {
-    position: absolute;
-    cursor: pointer;
-  }
-
-  span {
-    font-size: 13px;
-    opacity: 0.5;
-    text-transform: uppercase;
-  }
-
-  b {
-    font-size: 14px;
-  }
-
-  h5 {
-    font-weight: 400;
-    font-size: 14px;
-  }
-}
-
-.button {
-  background: #ffffff;
-  border: 1px solid #abaaaa;
-  box-sizing: border-box;
-  border-radius: 6px;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-
 .search-block {
   border: 1px solid #f0f0f0;
   border-radius: 8px;
   padding: 0 15px;
+  position: relative;
+
+  .clear {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    width: 14px;
+    height: 14px;
+
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 
   input {
     border: 0;
